@@ -20,6 +20,7 @@ git config --global core.autocrlf input # Dành cho Unix-based systems để chu
 
 ## Chức năng: Thêm tất cả các file đã thay đổi vào staging area.
 git add .gitattributes
+
 git add .
 
 ## Lệnh này sẽ thêm tất cả các tệp trong thư mục hiện tại và sửa đổi kiểu kết thúc dòng theo cấu hình core.autocrlf mà bạn đã thiết lập trước đó. Nó sẽ loại bỏ cảnh báo về việc LF sẽ được thay thế bằng CRLF.
