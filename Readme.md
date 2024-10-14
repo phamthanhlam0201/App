@@ -9,6 +9,9 @@ git lfs install
 ## Chức năng: Theo dõi các file có phần mở rộng .pkl bằng Git LFS, điều này giúp quản lý các file lớn như mô hình machine learning.
 git lfs track "*.pkl"
 
+## Chức năng: Thêm tất cả các file đã thay đổi vào staging area.
+git add .
+
 ## Lệnh này sẽ thêm tất cả các tệp trong thư mục hiện tại và sửa đổi kiểu kết thúc dòng theo cấu hình core.autocrlf mà bạn đã thiết lập trước đó. Nó sẽ loại bỏ cảnh báo về việc LF sẽ được thay thế bằng CRLF.
 git add --renormalize .
 
@@ -35,6 +38,9 @@ git push -u origin main
 
 
 # …or push an existing repository from the command line
+
+## Chức năng: Thêm tất cả các file đã thay đổi vào staging area.
+git add .
 
 ## Lệnh này sẽ thêm tất cả các tệp trong thư mục hiện tại và sửa đổi kiểu kết thúc dòng theo cấu hình core.autocrlf mà bạn đã thiết lập trước đó. Nó sẽ loại bỏ cảnh báo về việc LF sẽ được thay thế bằng CRLF.
 git add --renormalize .
