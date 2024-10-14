@@ -27,11 +27,11 @@ git add --renormalize .
 ## Chức năng: Thực hiện commit các thay đổi đã staged với thông điệp "first commit using git lfs". Đây là bước lưu lại phiên bản mới của dự án.
 git commit -m "first commit using git lfs"
 
-## Chức năng: Liên kết repository Git của bạn với một repository từ xa (remote) trên GitHub có URL là https://github.com/phamthanhlam0201/Notion.git.
-git remote add origin https://github.com/phamthanhlam0201/Notion.git
-
 ## Chức năng: Đổi tên nhánh hiện tại (thường là master) thành main. Điều này tuân theo chuẩn mới của Git, nơi main được dùng làm nhánh chính thay cho master.
 git branch -M main
+
+## Chức năng: Liên kết repository Git của bạn với một repository từ xa (remote) trên GitHub có URL là https://github.com/phamthanhlam0201/Notion.git.
+git remote add origin https://github.com/phamthanhlam0201/Notion.git
 
 ## Chức năng: Push toàn bộ commit từ nhánh main của repository cục bộ lên nhánh main của repository trên GitHub. Thêm cờ -u để thiết lập nhánh origin/main làm mặc định cho lần push sau.
 git push -u origin main
@@ -48,11 +48,11 @@ git add --renormalize .
 ## Chức năng: Thực hiện commit các thay đổi đã staged với thông điệp "first commit using git lfs". Đây là bước lưu lại phiên bản mới của dự án.
 git commit -m "Update 14/10/2024"
 
-## Chức năng: Liên kết repository Git cục bộ với repository từ xa trên GitHub. Lệnh này chỉ cần chạy một lần nếu repository chưa liên kết với remote.
-git remote add origin https://github.com/phamthanhlam0201/Notion.git
-
 ## Chức năng: Đổi tên nhánh hiện tại thành main nếu chưa đổi tên. Lệnh này không bắt buộc nếu nhánh đã có tên main.
 git branch -M main
+
+## Chức năng: Liên kết repository Git cục bộ với repository từ xa trên GitHub. Lệnh này chỉ cần chạy một lần nếu repository chưa liên kết với remote.
+git remote add origin https://github.com/phamthanhlam0201/Notion.git
 
 ## Chức năng: Push tất cả commit từ nhánh main của repository cục bộ lên nhánh main của repository trên GitHub.
 git push -u origin main
