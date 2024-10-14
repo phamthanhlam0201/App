@@ -9,6 +9,9 @@ git lfs install
 ## Chức năng: Theo dõi các file có phần mở rộng .pkl bằng Git LFS, điều này giúp quản lý các file lớn như mô hình machine learning.
 git lfs track "*.pkl"
 
+## Kiểm tra lại cấu hình của Git: Bạn có thể xác nhận rằng cấu hình của bạn đã được thiết lập đúng cách bằng cách chạy lệnh sau:
+git config --global --get core.autocrlf
+
 ## Cảnh báo: Nếu bạn nhận được thông báo về sự chuyển đổi CRLF ↔ LF, hãy đảm bảo Git xử lý điều đó một cách nhất quán.
 ## Khuyến nghị: Chạy lệnh sau để Git tự động xử lý chuyển đổi dòng trên Windows và Unix-based systems.
 git config --global core.autocrlf true  # Đối với Windows, điều này đảm bảo Git chuyển đổi dòng chính xác khi commit và checkout
