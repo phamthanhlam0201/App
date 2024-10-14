@@ -1,0 +1,45 @@
+# …or create a new repository on the command line
+
+# Chức năng: Khởi tạo một Git repository mới trong thư mục hiện tại. Sau khi khởi tạo, Git sẽ theo dõi các thay đổi trong thư mục.
+git init
+
+# Chức năng: Cài đặt Git LFS (Large File Storage) để hỗ trợ quản lý các file lớn. Lệnh này chỉ cần chạy một lần trên hệ thống.
+git lfs install
+
+# Chức năng: Theo dõi các file có phần mở rộng .pkl bằng Git LFS, điều này giúp quản lý các file lớn như mô hình machine learning.
+git lfs track "*.pkl"
+
+# Chức năng: Thêm tất cả các file đã thay đổi (bao gồm cả file mới) trong thư mục hiện tại vào staging area để sẵn sàng cho commit.
+git add .
+
+# Cảnh báo: Nếu bạn nhận được thông báo về sự chuyển đổi CRLF ↔ LF, hãy đảm bảo Git xử lý điều đó một cách nhất quán.
+# Khuyến nghị: Chạy lệnh sau để Git tự động xử lý chuyển đổi dòng trên Windows và Unix-based systems.
+git config --global core.autocrlf true  # Đối với Windows, điều này đảm bảo Git chuyển đổi dòng chính xác khi commit và checkout
+git config --global core.autocrlf input # Dành cho Unix-based systems để chuyển đổi CRLF thành LF khi commit nhưng không thay đổi khi checkout
+
+# Chức năng: Thực hiện commit các thay đổi đã staged với thông điệp "first commit using git lfs". Đây là bước lưu lại phiên bản mới của dự án.
+git commit -m "first commit using git lfs"
+
+# Chức năng: Liên kết repository Git của bạn với một repository từ xa (remote) trên GitHub có URL là https://github.com/phamthanhlam0201/Note.git.
+git remote add origin https://github.com/phamthanhlam0201/Note.git
+
+# Chức năng: Đổi tên nhánh hiện tại (thường là master) thành main. Điều này tuân theo chuẩn mới của Git, nơi main được dùng làm nhánh chính thay cho master.
+git branch -M main
+
+# Chức năng: Push toàn bộ commit từ nhánh main của repository cục bộ lên nhánh main của repository trên GitHub. Thêm cờ -u để thiết lập nhánh origin/main làm mặc định cho lần push sau.
+git push -u origin main
+
+
+# …or push an existing repository from the command line
+
+# Chức năng: Thêm tất cả các file đã thay đổi vào staging area.
+git add .
+
+# Chức năng: Liên kết repository Git cục bộ với repository từ xa trên GitHub. Lệnh này chỉ cần chạy một lần nếu repository chưa liên kết với remote.
+git remote add origin https://github.com/phamthanhlam0201/Note.git
+
+# Chức năng: Đổi tên nhánh hiện tại thành main nếu chưa đổi tên. Lệnh này không bắt buộc nếu nhánh đã có tên main.
+git branch -M main
+
+# Chức năng: Push tất cả commit từ nhánh main của repository cục bộ lên nhánh main của repository trên GitHub.
+git push -u origin main
