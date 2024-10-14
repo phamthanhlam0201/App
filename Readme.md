@@ -9,14 +9,14 @@ git lfs install
 ## Chức năng: Theo dõi các file có phần mở rộng .pkl bằng Git LFS, điều này giúp quản lý các file lớn như mô hình machine learning.
 git lfs track "*.pkl"
 
-## Chức năng: Thêm tất cả các file đã thay đổi (bao gồm cả file mới) trong thư mục hiện tại vào staging area để sẵn sàng cho commit.
-git add .
-
 ## Cảnh báo: Nếu bạn nhận được thông báo về sự chuyển đổi CRLF ↔ LF, hãy đảm bảo Git xử lý điều đó một cách nhất quán.
 ## Khuyến nghị: Chạy lệnh sau để Git tự động xử lý chuyển đổi dòng trên Windows và Unix-based systems.
 git config --global core.autocrlf true  # Đối với Windows, điều này đảm bảo Git chuyển đổi dòng chính xác khi commit và checkout
 
 git config --global core.autocrlf input # Dành cho Unix-based systems để chuyển đổi CRLF thành LF khi commit nhưng không thay đổi khi checkout
+
+## Chức năng: Thêm tất cả các file đã thay đổi (bao gồm cả file mới) trong thư mục hiện tại vào staging area để sẵn sàng cho commit.
+git add .
 
 ## Chức năng: Thực hiện commit các thay đổi đã staged với thông điệp "first commit using git lfs". Đây là bước lưu lại phiên bản mới của dự án.
 git commit -m "first commit using git lfs"
