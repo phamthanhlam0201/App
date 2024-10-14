@@ -21,9 +21,6 @@ git config --global core.autocrlf true  # Đối với Windows, điều này đ�
 
 git config --global core.autocrlf input # Dành cho Unix-based systems để chuyển đổi CRLF thành LF khi commit nhưng không thay đổi khi checkout
 
-## Chức năng: Thêm tất cả các file đã thay đổi (bao gồm cả file mới) trong thư mục hiện tại vào staging area để sẵn sàng cho commit.
-git add .
-
 ## Chức năng: Thực hiện commit các thay đổi đã staged với thông điệp "first commit using git lfs". Đây là bước lưu lại phiên bản mới của dự án.
 git commit -m "first commit using git lfs"
 
@@ -39,8 +36,8 @@ git push -u origin main
 
 # …or push an existing repository from the command line
 
-## Chức năng: Thêm tất cả các file đã thay đổi vào staging area.
-git add .
+## Lệnh này sẽ thêm tất cả các tệp trong thư mục hiện tại và sửa đổi kiểu kết thúc dòng theo cấu hình core.autocrlf mà bạn đã thiết lập trước đó. Nó sẽ loại bỏ cảnh báo về việc LF sẽ được thay thế bằng CRLF.
+git add --renormalize .
 
 ## Chức năng: Thực hiện commit các thay đổi đã staged với thông điệp "first commit using git lfs". Đây là bước lưu lại phiên bản mới của dự án.
 git commit -m "Update 14/10/2024"
