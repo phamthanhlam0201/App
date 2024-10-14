@@ -57,7 +57,11 @@ git branch -M main
 git remote add origin https://github.com/phamthanhlam0201/Notion.git
 
 ## Lệnh git pull origin main là một phần quan trọng trong quy trình làm việc với Git, giúp bạn giữ cho nhánh cục bộ của mình đồng bộ với các thay đổi từ kho từ xa. Nếu bạn có thêm câu hỏi hoặc cần thêm thông tin, hãy cho tôi biết!
-git pull origin main
+git pull origin main 
+
+## or git pull: Kéo các thay đổi từ xa về nhánh cục bộ.
+## --rebase: Thay vì hợp nhất (merge), rebase sẽ giúp bạn "áp dụng lại" các commit của bạn trên đỉnh của các thay đổi đã có từ xa, đảm bảo lịch sử commit sạch hơn.
+git pull origin main --rebase
 
 ## Chức năng: Push tất cả commit từ nhánh main của repository cục bộ lên nhánh main của repository trên GitHub.
 git push -u origin main
