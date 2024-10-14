@@ -54,5 +54,8 @@ git branch -M main
 ## Chức năng: Liên kết repository Git cục bộ với repository từ xa trên GitHub. Lệnh này chỉ cần chạy một lần nếu repository chưa liên kết với remote.
 git remote add origin https://github.com/phamthanhlam0201/Notion.git
 
+## Lệnh git pull origin main là một phần quan trọng trong quy trình làm việc với Git, giúp bạn giữ cho nhánh cục bộ của mình đồng bộ với các thay đổi từ kho từ xa. Nếu bạn có thêm câu hỏi hoặc cần thêm thông tin, hãy cho tôi biết!
+git pull origin main
+
 ## Chức năng: Push tất cả commit từ nhánh main của repository cục bộ lên nhánh main của repository trên GitHub.
 git push -u origin main
