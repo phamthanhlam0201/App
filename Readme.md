@@ -15,13 +15,14 @@ git add .
 # Cảnh báo: Nếu bạn nhận được thông báo về sự chuyển đổi CRLF ↔ LF, hãy đảm bảo Git xử lý điều đó một cách nhất quán.
 # Khuyến nghị: Chạy lệnh sau để Git tự động xử lý chuyển đổi dòng trên Windows và Unix-based systems.
 git config --global core.autocrlf true  # Đối với Windows, điều này đảm bảo Git chuyển đổi dòng chính xác khi commit và checkout
+
 git config --global core.autocrlf input # Dành cho Unix-based systems để chuyển đổi CRLF thành LF khi commit nhưng không thay đổi khi checkout
 
 # Chức năng: Thực hiện commit các thay đổi đã staged với thông điệp "first commit using git lfs". Đây là bước lưu lại phiên bản mới của dự án.
 git commit -m "first commit using git lfs"
 
-# Chức năng: Liên kết repository Git của bạn với một repository từ xa (remote) trên GitHub có URL là https://github.com/phamthanhlam0201/Note.git.
-git remote add origin https://github.com/phamthanhlam0201/Note.git
+# Chức năng: Liên kết repository Git của bạn với một repository từ xa (remote) trên GitHub có URL là https://github.com/phamthanhlam0201/Notion.git.
+git remote add origin https://github.com/phamthanhlam0201/Notion.git
 
 # Chức năng: Đổi tên nhánh hiện tại (thường là master) thành main. Điều này tuân theo chuẩn mới của Git, nơi main được dùng làm nhánh chính thay cho master.
 git branch -M main
@@ -36,7 +37,7 @@ git push -u origin main
 git add .
 
 # Chức năng: Liên kết repository Git cục bộ với repository từ xa trên GitHub. Lệnh này chỉ cần chạy một lần nếu repository chưa liên kết với remote.
-git remote add origin https://github.com/phamthanhlam0201/Note.git
+git remote add origin https://github.com/phamthanhlam0201/Notion.git
 
 # Chức năng: Đổi tên nhánh hiện tại thành main nếu chưa đổi tên. Lệnh này không bắt buộc nếu nhánh đã có tên main.
 git branch -M main
